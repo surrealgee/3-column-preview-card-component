@@ -60,6 +60,10 @@ a {
     border-bottom-right-radius: 10px;
 }
 
+.card-body {
+    max-width: 200px;
+}
+
 /* Buttons */
 
 .btn {
@@ -88,4 +92,47 @@ a {
 
 .btn-ternary {
     color: hsl(179, 100%, 13%);
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .column {
+        height: 600px;
+        padding: 3em;
+    }
+
+    .card-icon {
+        width: 100px;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    .card-body {
+        font-size: 1.2rem;
+        max-width: 270px;
+    }
+
+    .btn {
+        margin-top: 2.5em;
+    }
+
+    .column-first {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+        
+    .column-third {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
